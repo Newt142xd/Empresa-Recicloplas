@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex; /* Usamos Flexbox para alinear el logo y el menú */
+  align-items: center; /* Alinea verticalmente */
+  padding: 5px 8px; /* Espaciado interno del encabezado */
+}
+header .logo {
+  width: 200px;
+  margin-right: 20px; /* Espacio entre el logo y el menú */
+  /* Agrega espacio entre el logo y el menú */
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  margin-top: 0;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0, 7s;
+}
+
+header li:hover {
+  background-color: rgb(8, 78, 78);
+  border-radius: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  background-color: #fcfcfcd8;
+  max-height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  display: block;
+
+  text-decoration: none;
+  padding: 8px 15px; /* Reducimos el padding */
+  color: #030303;
+
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 10px;
+  border: 4px solid #11c756;
+  font-size: 16px;
+  width: 170px;
+  background-color: rgb(172, 179, 176);
+  z-index: 9999; /* Asegura que el submenú esté por encima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade sombra */
+}
+
+nav ul li:hover ul {
+  display: grid; /* Mostrar el submenú al pasar el mouse */
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 172px;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  margin-left: 5rem;
+  background-color: #0056b3;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .item {
+    flex: 1 1 25%; /* Se ajusta al 25% del ancho del contenedor */
+  }
+  .responsive-article {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .menu {
+    display: contents;
+  }
+
+  .Texto {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: auto;
+    margin-bottom: 20px;
+    order: 1; /* Cambia el orden del texto */
+    width: 90%;
+    max-width: 500px;
+  }
+  .Imagen {
+    order: 2;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 920px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu ul {
+    position: static;
+    width: 100%;
+  }
+
+  .menu li:hover > ul,
+  .menu li:focus-within > ul {
+    display: none;
+  }
+
+  .menu li:focus-within > ul {
+    display: block;
+  }
+
+  .menu .arrow {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+  }
+
+  .menu .arrow.open {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 920px) {
+  header {
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    border-radius: 20px; /* Asegura que el menú se posicione relativo al header */
+    left: 0;
+    width: 100%;
+    background-color: #fcfcfcd8;
+    z-index: 1000;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li ul {
+    position: static;
+    width: 100%;
+    border: 4px solid #11c756; /* Agregamos el borde */
+    background-color: #e0e0e0;
+    display: none;
+  }
+  nav ul li:hover ul {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .contenedor-flexible {
+    padding: 1.5rem;
+  }
+
+  .Texto {
+    width: 85%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .Imagen {
+    width: 90%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-flexible {
+    padding: 1rem;
+  }
+
+  .Titulo {
+    padding: 1px;
+  }
+
+  .Imagen {
+    margin-top: 13rem;
+    max-width: 350px;
+    display: flex;
+  }
+
+  .Fondo {
+    width: 400px;
+    height: 120px;
+    padding: 0px;
+  }
+
+  .Texto {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    font-size: 13px;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .contenedor-flexible {
+    padding: 0.5rem;
+  }
+
+  .Texto {
+    width: 95%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    font-size: 15px;
+  }
+
+  .Imagen {
+    width: 100%;
+    order: 2;
+    height: 300px;
+  }
+}
+
+.contenedor-flexible {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  justify-content: space-between; /* Cambiado para mejor distribución */
+  flex-wrap: wrap;
+}
+
+.Articulo {
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+}
+
+.Principal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
+    url("https://www.cpacific.cl/images/2021/planta-industrial-de-reciclaje1.jpg");
+  width: 100%;
+  font-size: 20px;
+  background-size: 70rem; /* Escalar para mostrar todo el contenido */
+  background-position: center; /* Centrar la imagen en el contenedor */
+}
+
+.Titulo {
+  font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-shadow: -1px -1px 0 #000,
+    /* Sombra hacia arriba izquierda */ 1px -1px 0 #000,
+    /* Sombra hacia arriba derecha */ -1px 1px 0 #000,
+    /* Sombra hacia abajo izquierda */ 1px 1px 0 #000; /* Sombra hacia abajo derecha */
+  margin-left: 5rem;
+  padding: 1rem;
+  color: rgb(66, 141, 85);
+}
+
+.Texto {
+  font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  font-size: 1em;
+  padding: 1rem;
+  margin: 0 auto; /* Centrado horizontal */
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 78, 78);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-size: clamp(16px, 2.5vw, 20px);
+  width: 380px;
+  padding: 40px;
+  margin-left: 6rem;
+  order: 1;
+  font-size: clamp(16px, 2.5vw, 20px);
+  text-align: center;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 78, 78);
+}
+
+.Fondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.363)),
+    url(https://i.pinimg.com/originals/3f/14/c4/3f14c4421a628c3320da197bd6ce6e1e.jpg);
+  height: auto;
+  width: 100%;
+
+  font-size: 10px;
+  display: flex;
+  background-size: cover;
+}
+
+.Imagen {
+  width: 30rem;
+  height: 340px;
+  margin-top: 3rem; /* Espacio adicional arriba de la imagen */
+  margin-bottom: 2rem; /* Espacio adicional abajo de la imagen */
+  position: relative;
+  order: 2;
+  object-fit: cover;
+  margin-left: 45rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-flexible {
+    flex-direction: column;
+  }
+
+  .Titulo {
+    padding: 1px;
+  }
+
+  .Imagen {
+    max-width: 100%;
+    display: flex;
+    order: 2;
+    margin-right: 2rem;
+    position: relative;
+  }
+
+  .Fondo {
+    height: 710px;
+    padding: 0px;
+  }
+
+  .Texto {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: auto;
+    order: 1; /* Cambia el orden del texto */
+    width: 79%;
+    text-align: center;
+  }
+
+  .whatsapp-main {
+    bottom: 10px;
+    margin-right: 1rem;
+  }
+
+  .whatsapp-sidebar {
+    width: 10%; /* Ajusta el ancho del sidebar en móviles */
+    right: 100%; /* Lo oculta completamente */
+    margin-top: 15rem;
+  }
+
+  .footer {
+    padding: 20rem;
+  }
+}
+
+/* Botón flotante */
+.whatsapp-main {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-main img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-main:hover {
+  transform: scale(1.1);
+}
+
+/* Barra lateral */
+.whatsapp-sidebar {
+  position: fixed;
+  top: 0;
+  margin-top: 23rem;
+  right: -420px;
+  width: 280px;
+  height: 40%;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  z-index: 110;
+}
+
+.sidebar-header {
+  background-color: #25d366;
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.chat-button,
+.info-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-button {
+  background-color: #25d366;
+  color: white;
+}
+
+.info-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Modal informativo */
+.info-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.modal-texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.close-modal {
+  background-color: #f44336;
+  color: white;
+  margin: 5rem;
+  margin-top: 3rem;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around; /* Espacia las columnas */
+  background-color: #053309;
+  text-align: center;
+  color: white;
+
+  padding: 40px;
+}
+
+.footer div {
+  max-width: 300px;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

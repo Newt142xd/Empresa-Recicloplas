@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>INICIO - RECICLOPLAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+    <link rel="icon" href="img/Logo Recicloplas.jpg" />
+  </head>
+  <body>
+    <div id="Principal">
+      <header>
+        <a href="#"
+          ><img src="img/Dinosaurio Recicloplas.jpg" class="logo"
+        /></a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+              <a href="#">Recicloplas </a>
+              <ul>
+                <li>
+                  <a href="Quienes somos.html" class="link" id="info-link"
+                    >Quienes somos</a
+                  >
+                </li>
+                <li>
+                  <a href="Mision.html" class="link" id="Mision-link">Mision</a>
+                </li>
+                <li>
+                  <a href="Vision.html" class="link" id="Vision-link">Vision</a>
+                </li>
+                <li>
+                  <a href="Objetivos.html" class="link" id="Objetivos-link"
+                    >Objetivos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Informacion</a>
+              <ul class="menu">
+                <li><a href="Mapas de rutas.html">Mapas De Rutas</a></li>
+                <li><a href="Uniforme.html">Condiciones Uniformes</a></li>
+                <li><a href="Toneladas.html">Toneladas Aprovechadas</a></li>
+                <li><a href="Material.html">Material De Rechazo</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="PQR usuarios.html" class="Menu" id="Menu-PQR"
+                >PQR Usuarios</a
+              >
+            </li>
+            <li>
+              <a href="PlataformaD.html" class="Menu" id="Menu-inicioSesion"
+                >Plataforma Documental</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <container class="Articulo">
+        <h2 class="Titulo">RECICLOPLAS</h2>
+      </container>
+      <a href="Conoce mas.html" class="button">CONOCE MAS &gt;</a>
+    </div>
+
+    <article class="imagen1">
+      <div class="contenedor-flexible">
+        <img class="Imagen2" src="img/Logo Recicloplas.jpg" />
+        <p class="Texto">
+          La asociación recicloplas es una organización que se enfoca en la
+          prestación del servicio público de aprovechamiento en las labores de
+          recolección clasificación y comercialización de los residuos sólidos
+          aprovechables, con experiencia previa en la labor por el personal y el
+          talento humano que la conforman, constituida formalmente en la ciudad
+          de Villavicencio (Meta) en el año 2023.
+        </p>
+      </div>
+    </article>
+
+    <section class="Fondo1">
+      <div class="contenedor-flexible">
+        <p class="Texto1">
+          Buscamos dignificar la labor de los recicladores de
+          oficio y que se reconozca la importancia de la misma
+          tanto para la preservación del medio ambiente como
+          para la ciudad e incentivarla; Realizamos
+          acompañamiento, supervisión e identificación en
+          sus rutas de recolección, les enseñamos a identificar
+          el material aprovechable y el rechazo y su posterior
+          clasificación.
+        </p>
+        <img class="Imagen3" src="img/Logo Recicloplas.jpg" />
+      </div>
+    </section>
+
+    <div class="whatsapp-chat-container">
+      <!-- Botón flotante -->
+      <button class="whatsapp-main" onclick="toggleChat()">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
+      </button>
+
+      <!-- Barra lateral -->
+      <div class="whatsapp-sidebar" id="whatsappSidebar">
+        <div class="sidebar-header">
+          <h2>¿Cómo podemos ayudarte?</h2>
+          <button class="close-btn" onclick="toggleChat()">×</button>
+        </div>
+        <div class="sidebar-content">
+          <button class="chat-button" onclick="startChat()">
+            Iniciar chat en WhatsApp
+          </button>
+          <button class="info-button" onclick="showInfo()">
+            Ver información
+          </button>
+        </div>
+      </div>
+      <!-- Modal informativo -->
+      <div class="info-modal" id="infoModal">
+        <div class="modal-content">
+          <h2 class="modal-titulo">Información</h2>
+          <p class="modal-texto">
+            Somos una empresa que busca dignificar, incentivar y que se le dé su
+            respectivo valor a la labor de los recicladores de oficio; Les
+            ofrecemos acompañamiento e identificación de sus rutas de
+            recolección, los capacitamos en pro de que sus capacidades para
+            identificar el material sean las más aptas para disminuir el rechazo
+            y les inculcamos el sentido de pertenencia.
+          </p>
+          <p class="modal-texto">
+            Horario de atención : lunes a viernes de 7:30 a 12pm / 2pm a 5pm
+            Sábados de 8am a 12pm
+          </p>
+          <button class="close-modal" onclick="closeInfo()">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    
+ <form class="Fondo2">
+  <div class="form-container">
+    <h2>Formulario de Contacto</h2>
+    <form action="https://example.com/submit" method="POST">
+      <!-- Campo de texto -->
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Escribe tu nombre"
+          required
+        />
+      </div>
+
+      <!-- Campo de correo -->
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Escribe tu correo"
+          required
+        />
+      </div>
+ </form>
+   <!-- Botón de envío -->
+   <div class="form-group">
+    <button type="submit">Suscribirse</button>
+  </div>
+</form>
+</div>
+
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div>
+   
+   <p>Vigilado por la Superintendencia de Servicios Públicos domiciliarios.</p>
+   <p>Horario de atención : lunes a viernes de 7:30 a 12pm / 2pm a 5pm
+  </p>
+  <p>Sábados de 8am a 12pm</p>
+  </div>
+ 
+  <div>
+    
+    <p>Dirección: MZ 2 CASA 6 Barrio el BRILLANTE</p>
+    <p>Móvil 3209748962
+    </p>
+    <p>Correo: asorecicloplas@gmail.com</p>
+  </div>
+</footer>
+  </body>
+</html>
