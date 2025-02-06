@@ -33,7 +33,7 @@ header ul li a {
 }
 
 header li:hover {
-  background-color: rgb(8, 78, 78);
+  background-color: rgba(8, 78, 78, 0.726);
   border-radius: 0px;
 }
 
@@ -42,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-left: 10rem;
-  background-color: #fcfcfcd8;
+  background-color: #fcfcfc79;
   max-height: 80px;
 }
 
@@ -117,7 +117,7 @@ menu li {
   top: 100%;
 
   left: 0;
-  background: #fff;
+  background: #ffffffa4;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -138,13 +138,6 @@ menu li {
   border-radius: 10px;
   font-size: 24px;
   cursor: pointer;
-}
-
-.Articulo {
-  width: 100%;
-  font-weight: bold;
-
-  display: flex;
 }
 
 .Articulo {
@@ -180,14 +173,14 @@ menu li {
   height: auto;
   max-width: 380px;
   padding: 50px;
-  margin-top: 30px;
+  margin-top: 7px;
   font-size: 1em;
   line-height: 1.5;
   margin-left: 42rem;
   position: relative;
+  background-color: rgb(8, 119, 82);
   text-align: center;
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
 }
 
 .Texto1 {
@@ -198,7 +191,7 @@ menu li {
   padding: 1rem;
   margin: 0 auto; /* Centrado horizontal */
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
+  background-color: rgb(8, 119, 82);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 420px;
   height: auto;
@@ -209,7 +202,6 @@ menu li {
   text-align: center;
   line-height: 1.6;
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
 }
 
 .Titulo {
@@ -229,11 +221,11 @@ menu li {
 
 #Principal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
-    url("https://www.cpacific.cl/images/2021/planta-industrial-de-reciclaje1.jpg");
+    url("https://concepto.de/wp-content/uploads/2012/03/medio-ambiente-1.jpg");
   width: 100%;
   height: auto;
   font-size: 18px;
-  background-size: 70rem; /* Escalar para mostrar todo el contenido */
+  background-size: 90rem; /* Escalar para mostrar todo el contenido */
   background-position: center; /* Centrar la imagen en el contenedor */
 }
 
@@ -243,7 +235,7 @@ menu li {
   font-weight: 750;
   font-family: Arial, Helvetica, sans-serif;
 
-  color: rgba(255, 255, 255, 0.795);
+  color: rgba(0, 0, 0, 0.795);
   text-decoration: none;
   margin-left: 8rem;
   border-radius: 5px;
@@ -253,17 +245,18 @@ menu li {
   cursor: pointer;
   z-index: unset;
 
-  background-color: rgba(0, 179, 45, 0.952);
+  background-color: rgba(14, 212, 97, 0.952);
 }
 
 .button:hover {
   background-color: transparent;
   transform: translate(0, 5s);
+  color: rgba(255, 255, 255, 0.795);
 }
 
 .imagen1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.438)),
-    url(https://i.pinimg.com/originals/3f/14/c4/3f14c4421a628c3320da197bd6ce6e1e.jpg);
+    url(https://c4.wallpaperflare.com/wallpaper/639/794/471/azul-blanca-cielo-naturaleza-wallpaper-preview.jpg);
   height: 450px;
   width: 100%;
   font-size: 20px;
@@ -274,7 +267,7 @@ menu li {
 
 .Imagen2 {
   width: 30rem;
-  height: 370px;
+  height: 440px;
   margin: 2rem;
   position: absolute;
   margin-left: 6rem;
@@ -293,10 +286,9 @@ menu li {
 
 .Fondo1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.13)),
-    url(https://arpasa.es/wp-content/uploads/2021/07/lograr-cesped-crezca-sombra0.jpg.webp);
+    url(https://www.bbva.com/wp-content/uploads/2019/06/A-0406-DiaMedioAmbiente-BBVA-1920x1180.jpg);
   height: 450px;
   width: 100%;
-
   font-size: 20px;
   display: grid;
   background-size: cover;
@@ -353,7 +345,7 @@ menu li {
 }
 
 .sidebar-header {
-  background-color: #25d366;
+  background-color: #194d2c;
   color: white;
   border-radius: 15px;
   padding: 15px;
@@ -495,8 +487,8 @@ menu li {
 .form-group button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: rgba(14, 212, 97, 0.952);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -504,13 +496,14 @@ menu li {
 }
 
 .form-group button:hover {
-  background-color: #0056b3;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .footer {
   display: flex;
   justify-content: space-around; /* Espacia las columnas */
-  background-color: #053309;
+  background-color: rgba(3, 146, 63, 0.952);
   text-align: center;
   color: white;
 

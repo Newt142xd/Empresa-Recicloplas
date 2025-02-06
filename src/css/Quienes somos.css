@@ -240,7 +240,7 @@ menu li {
   margin: 1rem;
   margin-left: 47rem;
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
+  background-color: rgb(8, 119, 82);
 }
 
 .Titulo {
@@ -259,16 +259,16 @@ menu li {
 
 #Principal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
-    url("https://www.cpacific.cl/images/2021/planta-industrial-de-reciclaje1.jpg");
+    url("https://concepto.de/wp-content/uploads/2012/03/medio-ambiente-1.jpg");
   width: 100%;
 
   font-size: 18px;
-  background-size: 70rem; /* Escalar para mostrar todo el contenido */
+  background-size: 90rem; /* Escalar para mostrar todo el contenido */
   background-position: center; /* Centrar la imagen en el contenedor */
 }
 
 .Fondo1 {
-  background-image: url(https://i.pinimg.com/originals/3f/14/c4/3f14c4421a628c3320da197bd6ce6e1e.jpg);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/639/794/471/azul-blanca-cielo-naturaleza-wallpaper-preview.jpg);
   height: 450px;
   width: 100%;
   font-size: 20px;
@@ -525,7 +525,7 @@ menu li {
 .footer {
   display: flex;
   justify-content: space-around; /* Espacia las columnas */
-  background-color: #053309;
+  background-color: rgb(8, 119, 82);
   text-align: center;
   color: white;
 
