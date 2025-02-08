@@ -33,7 +33,7 @@ header ul li a {
 }
 
 header li:hover {
-  background-color: rgb(8, 78, 78);
+  background-color: rgba(8, 78, 78, 0.726);
   border-radius: 0px;
 }
 
@@ -42,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-left: 10rem;
-  background-color: #fcfcfcd8;
+  background-color: #fcfcfc79;
   max-height: 80px;
 }
 
@@ -117,7 +117,7 @@ menu li {
   top: 100%;
 
   left: 0;
-  background: #fff;
+  background: #ffffffa4;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -232,9 +232,7 @@ menu li {
   font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
-
   font-size: 1em;
-
   width: 320px;
   padding: 40px;
   margin: 1rem;
@@ -246,13 +244,14 @@ menu li {
 .Titulo {
   font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: -1px -1px 0 #000,
     /* Sombra hacia arriba izquierda */ 1px -1px 0 #000,
     /* Sombra hacia arriba derecha */ -1px 1px 0 #000,
     /* Sombra hacia abajo izquierda */ 1px 1px 0 #000; /* Sombra hacia abajo derecha */
-  margin-left: 2rem;
+  margin-left: 8rem;
   padding: 1rem;
   color: rgb(66, 141, 85);
 }
@@ -261,7 +260,6 @@ menu li {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
     url("https://concepto.de/wp-content/uploads/2012/03/medio-ambiente-1.jpg");
   width: 100%;
-
   font-size: 18px;
   background-size: 90rem; /* Escalar para mostrar todo el contenido */
   background-position: center; /* Centrar la imagen en el contenedor */

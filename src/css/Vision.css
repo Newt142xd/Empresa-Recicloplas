@@ -33,7 +33,7 @@ header ul li a {
 }
 
 header li:hover {
-  background-color: rgb(8, 78, 78);
+  background-color: rgba(8, 78, 78, 0.726);
   border-radius: 0px;
 }
 
@@ -42,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-left: 10rem;
-  background-color: #fcfcfcd8;
+  background-color: #fcfcfc79;
   max-height: 80px;
 }
 
@@ -72,17 +72,15 @@ nav ul li a {
 }
 
 nav ul li ul {
-  display: none;
+  display: none; /* Ocultar el submenú inicialmente */
   position: absolute;
-  top: 100%;
+  top: 100%; /* Aparece justo debajo del elemento padre */
   left: 0;
   border-radius: 10px;
-  border: 4px solid #11c756;
-  font-size: 16px;
-  width: 170px;
+  border: 4px solid #11c756; /* Agregamos el borde */
+  font-size: 16px; /* Reducimos el tamaño de fuente */
+  width: 170px; /* Hacemos el submenú más estrecho */
   background-color: rgb(172, 179, 176);
-  z-index: 9999; /* Asegura que el submenú esté por encima */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade sombra */
 }
 
 nav ul li:hover ul {
@@ -119,7 +117,7 @@ menu li {
   top: 100%;
 
   left: 0;
-  background: #fff;
+  background: #ffffffa4;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -324,23 +322,24 @@ menu li {
 
 .Principal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
-    url("https://www.cpacific.cl/images/2021/planta-industrial-de-reciclaje1.jpg");
+    url("https://concepto.de/wp-content/uploads/2012/03/medio-ambiente-1.jpg");
   width: 100%;
-  font-size: 20px;
-  background-size: 70rem; /* Escalar para mostrar todo el contenido */
+  font-size: 18px;
+  background-size: 90rem; /* Escalar para mostrar todo el contenido */
   background-position: center; /* Centrar la imagen en el contenedor */
 }
 
 .Titulo {
   font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: -1px -1px 0 #000,
     /* Sombra hacia arriba izquierda */ 1px -1px 0 #000,
     /* Sombra hacia arriba derecha */ -1px 1px 0 #000,
     /* Sombra hacia abajo izquierda */ 1px 1px 0 #000; /* Sombra hacia abajo derecha */
-  margin-left: 5rem;
+  margin-left: 8rem;
   padding: 1rem;
   color: rgb(66, 141, 85);
 }
@@ -354,7 +353,7 @@ menu li {
   padding: 1rem;
   margin: 0 auto; /* Centrado horizontal */
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   line-height: 1.6;
   font-size: clamp(16px, 2.5vw, 20px);
@@ -366,12 +365,12 @@ menu li {
   text-align: center;
   line-height: 1.6;
   color: rgb(255, 255, 255);
-  background-color: rgb(8, 78, 78);
+  background-color: rgb(8, 119, 82);
 }
 
 .Fondo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.363)),
-    url(https://i.pinimg.com/originals/3f/14/c4/3f14c4421a628c3320da197bd6ce6e1e.jpg);
+    url(https://c4.wallpaperflare.com/wallpaper/639/794/471/azul-blanca-cielo-naturaleza-wallpaper-preview.jpg);
   height: auto;
   width: 100%;
 
@@ -577,7 +576,7 @@ menu li {
 .footer {
   display: flex;
   justify-content: space-around; /* Espacia las columnas */
-  background-color: #053309;
+  background-color: rgba(3, 146, 63, 0.952);
   text-align: center;
   color: white;
 

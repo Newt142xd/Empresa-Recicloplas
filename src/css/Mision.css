@@ -33,7 +33,7 @@ header ul li a {
 }
 
 header li:hover {
-  background-color: rgb(8, 78, 78);
+  background-color: rgba(8, 78, 78, 0.726);
   border-radius: 0px;
 }
 
@@ -42,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-left: 10rem;
-  background-color: #fcfcfcd8;
+  background-color: #fcfcfc79;
   max-height: 80px;
 }
 
@@ -80,7 +80,6 @@ nav ul li ul {
   border: 4px solid #11c756; /* Agregamos el borde */
   font-size: 16px; /* Reducimos el tamaño de fuente */
   width: 170px; /* Hacemos el submenú más estrecho */
-  z-index: 9999; /* Asegura que el submenú esté por encima */
   background-color: rgb(172, 179, 176);
 }
 
@@ -116,12 +115,25 @@ menu li {
   display: none;
   position: absolute;
   top: 100%;
+
   left: 0;
-  background: #fff;
+  background: #ffffffa4;
   list-style: none;
   padding: 0;
   margin: 0;
   width: 172px;
+}
+
+.Articulo {
+  width: 100%;
+  font-weight: bold;
+
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -140,192 +152,22 @@ menu li {
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
-  .item {
-    flex: 1 1 25%; /* Se ajusta al 25% del ancho del contenedor */
-  }
-  .responsive-article {
-    flex-direction: column-reverse; /* Invierte el orden de los elementos */
-    align-items: center;
-  }
-
-  .menu {
-    display: contents;
-  }
-
-  .Texto {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: auto;
-    margin-bottom: 20px;
-    order: 2; /* Cambia el orden del texto */
-    width: 90%;
-    max-width: 500px;
-  }
-  .Imagen2 {
-    order: 1; /* Cambia el orden de la imagen */
-
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 920px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu ul {
-    position: static;
-    width: 100%;
-  }
-
-  .menu li:hover > ul,
-  .menu li:focus-within > ul {
-    display: none;
-  }
-
-  .menu li:focus-within > ul {
-    display: block;
-  }
-
-  .menu .arrow {
-    display: inline-block;
-    transform: rotate(0deg);
-    transition: transform 0.3s;
-  }
-
-  .menu .arrow.open {
-    transform: rotate(180deg);
-  }
-}
-
-@media (max-width: 920px) {
-  header {
-    position: relative;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70%;
-    border-radius: 20px; /* Asegura que el menú se posicione relativo al header */
-    left: 0;
-    width: 100%;
-    background-color: #fcfcfcd8;
-    z-index: 1000;
-  }
-  nav ul li {
-    width: 100%;
-  }
-  nav ul li ul {
-    position: static;
-    width: 100%;
-    border: 4px solid #11c756; /* Agregamos el borde */
-    background-color: #e0e0e0;
-    display: none;
-  }
-  nav ul li:hover ul {
-    display: block;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .menu.show {
-    display: flex;
-  }
-
-  .Texto {
-    margin-left: 24rem; /* Elimina el margen izquierdo */
-    margin-right: auto;
-
-    order: 3; /* Cambia el orden del texto */
-    width: 45%;
-
-    text-align: center;
-  }
-  .Imagen {
-    max-width: 10%;
-    display: flex;
-    margin-left: 1rem;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor-flexible {
-    flex-direction: column;
-  }
-
-  .Titulo {
-    padding: 1px;
-  }
-
-  .Imagen {
-    max-width: 120px;
-    display: flex;
-    margin-left: 4rem;
-    position: relative;
-  }
-
-  .Fondo1 {
-    height: 840px;
-    padding: 0;
-  }
-
-  .Texto {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: auto;
-
-    order: 2; /* Cambia el orden del texto */
-    width: 69%;
-
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .whatsapp-main {
-    bottom: 20px;
-    margin-right: 1rem;
-  }
-
-  .whatsapp-sidebar {
-    width: 90%; /* Ajusta el ancho del sidebar en móviles */
-    right: 100%; /* Lo oculta completamente */
-    margin-top: 15rem;
-  }
-
-  .footer {
-    padding: 30rem;
-  }
-}
-
 .item {
   flex: 1 1 100%; /* Se ajusta al 100% del ancho del contenedor */
 }
 
 .Principal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.438)),
-    url("https://www.cpacific.cl/images/2021/planta-industrial-de-reciclaje1.jpg");
+    url("https://concepto.de/wp-content/uploads/2012/03/medio-ambiente-1.jpg");
   width: 100%;
-
   width: 100%;
-
   font-size: 18px;
   background-size: 70rem; /* Escalar para mostrar todo el contenido */
   background-position: center; /* Centrar la imagen en el contenedor */
 }
 
 .Fondo {
-  background-image: url(https://img.pikbest.com/wp/202408/grainy-texture-design-abstract-dark-green-background-with-elements_9939554.jpg!w700wp);
+  background-image: url(https://www.bbva.com/wp-content/uploads/2019/06/A-0406-DiaMedioAmbiente-BBVA-1920x1180.jpg);
   height: 450px;
   height: auto;
   font-size: 20px;
@@ -372,8 +214,9 @@ menu li {
 .Titulo {
   font-family: Source Sans Pro, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: -1px -1px 0 #000,
     /* Sombra hacia arriba izquierda */ 1px -1px 0 #000,
     /* Sombra hacia arriba derecha */ -1px 1px 0 #000,
@@ -384,8 +227,8 @@ menu li {
 }
 
 .Imagen {
-  width: 420px;
-  height: 340px;
+  width: 30rem;
+  height: 380px;
   margin: 20px;
   margin-left: 12rem;
   position: absolute;
@@ -633,10 +476,9 @@ menu li {
 .footer {
   display: flex;
   justify-content: space-around; /* Espacia las columnas */
-  background-color: #053309;
+  background-color: rgba(3, 146, 63, 0.952);
   text-align: center;
   color: white;
-
   padding: 40px;
 }
 
